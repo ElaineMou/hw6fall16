@@ -80,7 +80,6 @@ class MoviesController < ApplicationController
   
   def add_tmdb
     hash = params[:tmdb_movies]
-    puts params
     if hash == nil || hash.empty?
       flash[:notice] = "No movies selected"
     else
